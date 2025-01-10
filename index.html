@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Countdown</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="wrapper bg-white/60 w-full h-screen flex justify-center items-center">
+        <div class="container w-[70%] h-[80%] bg-[url('https://plus.unsplash.com/premium_photo-1681487906725-ecd65970ac66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-bottom drop-shadow-lg shadow-black shadow-lg flex">
+            <nav class="fixed w-full h-[5em] flex justify-between items-center px-[3em] text-white">
+                <img src="https://img.freepik.com/premium-vector/traveling-logo-design_745595-734.jpg?w=826" alt="logo" class="w-[4em] h-[4em] rounded-full">
+                <div class="links flex w-[30%] justify-between font-semibold">
+                    <p>Home</p>
+                    <p>About</p>
+                    <p>Travel</p>
+                    <p>Bookings</p>
+                    <p>Contact</p>
+                </div>
+            </nav>
+            <div class="overlay flex w-full h-full bg-black/20">
+                <div class="left w-1/2 h-[89.5%] relative top-[5em] flex flex-col justify-center items-left px-[2em] gap-[6em]">
+                    <div class="text flex flex-col gap-[2em] text-white">
+                        <h2 class="text-6xl font-bold">Lorem ipsum dolor sit amet.</h2>
+                        <p class="text-lg italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, dolorem?</p>
+                    </div>
+                    <div class="btn">
+                        <button class="w-[30%] h-[3em] bg-white rounded-md font-semibold">Let's Travel</button>
+                    </div>
+                </div>
+                <div class="right w-1/2 h-[89.5%] relative top-[5em] flex flex-col justify-center items-center gap-[2em]">
+                    <img src="./public/calendar.png" alt="calenadar" class="w-[60%] h-[60%] rounded-xl">
+                    <div class="countdown w-[60%] h-[6em] bg-white rounded-xl flex justify-between items-center p-[0.5em] text-white">
+                        <div class="box1 w-[24%] h-full bg-yellow-700/60 rounded-xl flex justify-center items-center">
+                            <p class="text-2xl" id="days"></p>
+                        </div>
+                        <div class="box1 w-[24%] h-full bg-yellow-700/60 rounded-xl flex justify-center items-center">
+                            <p class="text-2xl" id="hours"></p>
+                        </div>
+                        <div class="box1 w-[24%] h-full bg-yellow-700/60 rounded-xl flex justify-center items-center">
+                            <p class="text-2xl" id="minutes"></p>
+                        </div>
+                        <div class="box1 w-[24%] h-full bg-yellow-700/60 rounded-xl flex justify-center items-center">
+                            <p class="text-2xl" id="seconds"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
